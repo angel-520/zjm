@@ -244,8 +244,8 @@ const ControlPanel: React.FC<ControlPanelProps> = ({
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start border-t-2 border-green-500/30 pt-6">
         <div className="md:col-span-2 flex flex-col space-y-4">
           <h4 className="text-lg font-semibold text-gray-400 tracking-wider mb-2">OUTPUT REGULATION</h4>
-          <Slider label="VOLTAGE CALIBRATION" value={voltageCalibration} min={-20} max={20} step={0.5} unit="V" onChange={onVoltageCalibrationChange} colorClass="purple" />
-          <Slider label="CURRENT LIMIT" value={currentLimit} min={1} max={10} step={0.1} unit="A" onChange={onCurrentLimitChange} colorClass="green"/>
+          <Slider label="VOLTAGE CALIBRATION" value={voltageCalibration} min={0} max={40} step={0.5} unit="V" onChange={onVoltageCalibrationChange} colorClass="purple" />
+          <Slider label="CURRENT LIMIT" value={currentLimit} min={0} max={10} step={0.1} unit="A" onChange={onCurrentLimitChange} colorClass="green"/>
         </div>
         <div className="flex flex-col items-center">
           <h4 className="text-lg font-semibold text-gray-400 tracking-wider mb-2">POWER MANAGEMENT</h4>
